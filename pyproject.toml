@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "insighturl"
+version = "0.1.0"
+description = "AI-powered web Q&A tool that extracts and answers questions strictly from provided URLs using RAG"
+authors = ["Sathvika-891 <n171254@rguktn.ac.in>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.3.18"
+python-dotenv = "^1.0.1"
+langchain-together = "^0.3.0"
+langchain-huggingface = "^0.1.2"
+unstructured = "^0.16.20"
+mesop = "^0.14.1"
+gradio = "^5.15.0"
+streamlit = "^1.42.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
