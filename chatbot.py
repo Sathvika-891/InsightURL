@@ -6,18 +6,15 @@ from langchain_chroma import Chroma
 from dotenv import load_dotenv
 from prompt import get_prompt_template
 import os
-from uuid import uuid4
 import requests
 from urllib.parse import urlparse
 import hashlib
 
-load_dotenv()
 os.environ["TOGETHER_API_KEY"]=os.environ.get("TOGETHER_API_KEY")
 os.environ["HUGGINGFACE_ACCESS_TOKEN"]=os.environ.get("HUGGINGFACE_ACCESS_TOKEN")
 
 class Chatbot:
     def __init__(self):
-        self.session_id = str(uuid4())
         self.text_splitter = CharacterTextSplitter(
             separator="n",chunk_size=1000,chunk_overlap=300
         )
