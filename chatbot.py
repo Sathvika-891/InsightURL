@@ -9,7 +9,7 @@ import os
 import requests
 from urllib.parse import urlparse
 import hashlib
-
+load_dotenv()
 os.environ["TOGETHER_API_KEY"]=os.environ.get("TOGETHER_API_KEY")
 os.environ["HUGGINGFACE_ACCESS_TOKEN"]=os.environ.get("HUGGINGFACE_ACCESS_TOKEN")
 
